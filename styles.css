@@ -1,0 +1,238 @@
+img {
+    width: 100%;
+
+}
+
+h1 {
+
+    /*    font-family: 'Playfair Display', serif;*/
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+/****************************  Menu  ****************************/
+
+.hidden {
+
+    transform: translateY(-200%);
+    margin-bottom: -105vw;
+
+
+
+
+}
+
+#menuknap {
+
+
+    cursor: pointer;
+    position: absolute;
+    left: 0vw;
+    font-size: 5vw;
+    width: 13vw;
+
+
+}
+
+/* unvisited link */
+nav a:link {
+    color: black;
+}
+
+/* visited link */
+nav a:visited {
+    color: black;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* selected link */
+nav a:active {
+    color: black;
+}
+
+header {
+    width: 100%;
+
+
+}
+
+nav {
+    text-align: center;
+    font-family: 'Prata', sans-serif;
+
+
+
+
+
+}
+
+nav a {
+    display: block;
+    font-size: 0.8rem;
+    margin: 1rem;
+    padding: 10px;
+    margin-right: 15vw;
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    nav a {
+        border-left: 1px black solid;
+        border-right: 1px black solid;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        display: inline-block;
+
+
+    }
+
+    .hidden {
+        transform: translateY(0%);
+
+        margin-bottom: 0vw;
+
+
+    }
+
+    #menuknap {
+
+        left: -10vw;
+
+    }
+
+    nav a {
+
+        margin-right: 0vw;
+
+    }
+
+}
+
+
+
+
+
+/****************************  Menu slut  ****************************/
+
+
+
+/************************** FORSIDE **************************/
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+#om .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 4vw;
+    padding: 4vw;
+
+
+}
+
+#om .column_2 {
+    flex-grow: 4;
+    flex-basis: 300px;
+    margin: 4vw;
+    padding: 4vw;
+}
+
+
+/************************** STILARTSITE **************************/
+
+#indhold .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#indhold .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 3vw;
+    padding: 3vw;
+}
+
+#indhold .column_2 {
+    flex-grow: 4;
+    flex-basis: 300px;
+    margin: 2vw;
+    padding-top: 6vw;
+}
+
+
+/***********************EFFEKTER****************************/
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    padding: 16px 32px;
+}
